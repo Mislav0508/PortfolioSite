@@ -1,0 +1,65 @@
+.div-one{
+  background: rgb(17, 16, 16);
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.div-two{
+  background: grey;
+  height: 350px;
+  width: 50%;
+  margin: auto;
+}
+.random-btn{
+  padding: 10px;
+  margin-top: 100px;
+  cursor: pointer;
+  font-family: 'Jura', sans-serif;
+}
+.random-img{
+  max-width: 200px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.random-icons-container{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.random-icon{
+  transform: scale(2);
+  margin: 20px;
+  cursor: pointer;
+  padding: 4px;
+
+}
+.title-div{
+  font-family: 'Jura', sans-serif;
+  position: absolute;
+  bottom: 210px;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 40vw;
+}
+.info-div{
+  font-family: 'Jura', sans-serif;
+  position: absolute;
+  bottom: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 40vw;
+}

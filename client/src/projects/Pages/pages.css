@@ -1,0 +1,42 @@
+.pages-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.images-div{
+  display: grid;
+  justify-content: center;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, 250px);
+}
+img{
+  max-width: 300px;
+  max-height: 200px;
+}
+.title{
+  margin-top: -3rem;
+}
+.underline-images{
+  border: 2px solid grey;
+  background: grey;
+  width: 12rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+.images-btn{
+  padding: 10px;
+  border: grey solid 2px;
+  margin: 5px;
+  cursor: pointer;
+}
+.active-images-btn{
+  background: darkgrey;
+}
+.btn-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+}

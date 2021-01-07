@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+:root{
+  --primaryColor: lightblue;
+  --secondaryColor: grey;
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+  width: 100%;
+}
+/* ------------------------- ABOUT ---------------------------- */
+.about{
+  position: absolute;
+  margin: 12vh auto auto auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.ab-desc{
+  margin-bottom: 2rem;
+}
+.ab-desc-me{
+  width: 70vw;
+  margin: 1.5rem auto;
+  line-height: 1.7;
+}
+@media screen and (min-width: 800px){
+  .ab-desc-me{
+    width: 50vw;
+  }
+}
+.underline{
+  border: grey solid 2px;
+  background: grey;
+  width: 7rem;
+  margin: 10px auto;
+}
+.skills-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-div{
+  margin: 2rem;
+}
+.skills-icon{
+  margin: 2rem;
+  transform: scale(3);
+}
+.html{
+  color: rgb(226, 92, 2);
+  transform: scale(3.5);
+}
+.css{
+  color: #2965f1;
+}
+.js{
+  color: rgb(236, 236, 0);
+  background: black;
+}
+.react{
+  color: lightblue;
+  background: black;
+  border-radius: 10%;
+}
+.bootstrap{
+  color: purple;
+}
+.node, .mongo{
+  color: green;
+}
+.heroku{
+  background: purple;
+  color: white;
+}
+.netlify{
+  color: teal;
+}
+ul{
+  list-style: none;
+}
+
+
+
+/* ------------------------- PROJECTS ---------------------------- */
+.projects{
+  position: absolute;
+  margin: 15vh 10vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+.project{
+  transition: transform 1s;
+}
+.project:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+}
+.project-description{
+  color: #4c4a37; font-family: 'Jura', sans-serif, sans-serif; font-size: 18px; line-height: 32px; margin: 0 0 24px;
+}
+.project-title{
+  color: black; font-family: 'Jura', sans-serif, sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 10px 0; text-align: center; border-bottom: 2px grey solid;
+}
+.project img{
+  min-width: 150px;
+  min-height: 200px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.read-more-btn{
+  border: none;
+  background-color: white;
+  color: black;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: 800;
+  
+}
+/* ------------------------- CONTACT ---------------------------- */
+.contact{
+  position: absolute;
+  margin-top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 255px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.div-line{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border: 2px solid grey;
+  width: 7rem;
+  background-color: grey;
+}
+.contact-form-container{
+  margin-top: 2rem;
+  width: 70vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-form-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 35px 35px 120px auto;
+  grid-template-areas: 
+  "n n e e"
+  "s s p p"
+  "m m m m"
+  "b b b b";
+}
+.grid-name{
+  grid-area: n;
+}
+.grid-email{
+  grid-area: e;
+}
+.grid-subject{
+  grid-area: s;
+}
+.grid-phone{
+  grid-area: p;
+}
+.grid-message{
+  grid-area: m;
+}
+.grid-submit-btn{
+  grid-area: b;
+  padding: 10px;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: darkgrey;
+  color: white;
+}
+.grid-submit-btn:hover{
+  opacity: 0.7;
+}
+.contact-info{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.info-box{
+  border: 2px solid grey;
+  margin: 10px;
+  width: 25vw;
+  max-width: 300px;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 250px;
+  box-shadow: 10px 10px lightgrey;
+}
+.info-icon{
+  transform: scale(2.5);
+  margin: 0 100px;
+}
+/* ------------------------- ERROR ---------------------------- */
+.error{
+  position: absolute;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

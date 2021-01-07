@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 100px;
+
+}
+h1,h2,h3,h4,h5,p,ul,li,button{
+  font-family: 'Jura', sans-serif;
+}
+:root{
+  --primaryColor: lightblue;
+  --secondaryColor: grey;
+}
+img{
+  width: 100%;
+}
+/* ------------------------- NAVBAR ---------------------------- */
+.navbar{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; 
+  border-bottom: 2px solid grey; 
+  background-color: white; 
+}
+.navbar-list-container{
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.logo{
+  width: 15%;
+  min-width: 250px;
+  height: 90%;
+  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+}
+.navbar-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.navbar-list li{
+  width: 100px;
+  margin: 10px;
+  border: 1.5px solid grey;
+  padding: 10px; 
+  text-align: center;
+}
+.nav-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+.navbar-list li:hover{
+  background-color: lightgrey;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.hamburger-btn{
+  display: none;
+  transform: scale(2.5);
+}
+@media screen and (max-width: 740px){
+  .navbar-list li{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 0;
+  justify-content: center;
+  }
+  .hamburger-btn{
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 25px;
+    cursor: pointer;
+  }
+  .navbar-list-container{
+    margin-top: 10px;
+    height: 0rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .navbar{    
+    z-index: 5;
+  }
+}
+/* ------------------------- HOME ---------------------------- */
+
+.home{
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.home-name{
+  width: 100%;
+}
+.home-btn{
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.home-btn:hover{
+  background-color: lightgrey;
+  opacity: 0.4;
+  cursor: pointer;
+}
+/* ------------------------- FOOTER ---------------------------- */
+.footer{
+  position: fixed;
+  /* top: 85%; */
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: grey;
+  border-top: 1.5px solid grey;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px){
+  .footer{
+    height: 55px;
+    margin-top: 70px;
+  }
+}
+.footer a {
+  margin: 20px;
+  transform: scale(2.5);
+  color: white;
+  
+}

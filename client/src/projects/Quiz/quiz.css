@@ -1,0 +1,36 @@
+/* ----------------------------- QUIZ --------------------------- */
+.quiz{
+  position: absolute;
+  margin-top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 70vw;
+}
+
+.quiz-header{
+  margin: 10px;
+}
+.quiz-question{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.quiz-footer{
+  border: 2px solid grey;
+}
+.quiz-button{
+  margin: 5px;
+  padding: 10px;
+}
+.wrongAnswer{
+  width: 50%;
+  max-width: 400px;
+  min-width: 300px;
+}
+.quiz-footer h1{
+  margin: 20px 0px;
+}
